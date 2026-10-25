@@ -2,29 +2,20 @@
 
 AI-powered platform that predicts whether social media posts will be moderated/blocked.
 
-## 🚀 Quick Start
+**Team**: Akimov Daniil powered with latest technologies
 
-```bash
-# Clone and setup
-git clone https://github.com/yourusername/pre-post-checker
-cd pre-post-checker
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+**Goal for the semester**: Build and deploy Instagram text, photo moderation binary classifiers (for at least 3 violation category each) with web interface
 
-# Train model
-python -m src.ml.training.train_instagram
+**After goal achieved**: Extend the number of violation categories, fuse two separate models
 
-# Run backend
-uvicorn src.backend.api.main:app --reload
+## Who will use this?
+It can be used by content creators that want to be assured in their content won't be blocked by the social media platform. Potentially the social media platform could use this checker for checking one's post's alignment with platform rules.
 
-# Run frontend (in another terminal)
-cd src/frontend
-npm install
-npm run dev
+## Preliminary Technical Stack
+- **ML**: PyTorch 2.0.1, Transformers 4.35.0, RoBERTa-base
+- **Backend**: FastAPI, Redis, PostgreSQL
+- **Frontend**: Next.js 14, TypeScript, Tailwind
+- **Infra**: Docker, GitHub Actions (CI)
 
-## 📦 Project Structure
-See spec.md for detailed architecture.
-
-## 📊 Status
-Phase 1 (Instagram Text Moderation) - In Progress
+## NFR
+Coming not really soon. As far as it is my first project, don't expect anything extraordinary. In the first phase (this semester) I would be glad if it will be running (70-80% accuracy score on assesssment tests would be considered fantastic by me).

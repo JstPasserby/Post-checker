@@ -19,13 +19,13 @@ repos:
     rev: 6.1.0
     hooks:
       - id: flake8
-        args: ["--max-line-length=120"]
+        args: ["--max-line-length=120", "--extend-ignore=E203"]
 
   - repo: local
     hooks:
       - id: jupyter-nb-clear-output
         name: jupyter-nb-clear-output
         files: \.ipynb$
-        stages: [commit]
+        stages: [pre-commit]
         language: system
         entry: jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace

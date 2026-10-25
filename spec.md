@@ -1,3 +1,4 @@
+# Don't read that
 # 📋 `spec.md` - Pre-Post Checker Phase 1 Specification
 
 ## Project Overview

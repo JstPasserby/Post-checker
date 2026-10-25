@@ -6,3 +6,5 @@ flake8==6.1.0
 jupyter==1.0.0
 ipykernel==6.27.1
 wandb==0.16.0
+matplotlib==3.10.8
+seaborn==0.13.2

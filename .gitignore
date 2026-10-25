@@ -33,6 +33,7 @@ models/exports/
 # Data
 data/raw/
 data/processed/
+data/synthetic/
 !data/synthetic/README.md
 
 # Logs
